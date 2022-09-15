@@ -1,14 +1,16 @@
-import { Component } from "react";
+import React,{Component } from "react";
 import axios from "axios";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "reactstrap";
+import MainMenu from './components/MainMenu' 
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      data: [],
       filteredData: [],
       categories: []
     };
@@ -32,24 +34,35 @@ class App extends Component {
           filteredData: items.data,
           categories: categoryData
         });
+        console.log(categoryData)
       })
+
       .catch((error) => "The error is" + error);
   }
 
+
+
   render() {
-    const { categories } = this.state;
+    const { categories, data } = this.state;
 
     return (
       <div className="App">
-        {/* <>
-          {categories.map((category, index) => {
+
+        <div className ='title'>
+        <h2>Our Menu</h2>
+
+        <div className = 'underline'></div>
+        </div>
+
+        {categories.map((category, index) => {
             return (
               <Button size="lg" outline color="warning" key={index}>
                 {category}
               </Button>
             );
           })}
-        </> */}
+          
+        <MainMenu getData ={data} />
       </div>
     );
   }
