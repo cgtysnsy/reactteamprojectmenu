@@ -2,8 +2,9 @@ import React,{Component } from "react";
 import axios from "axios";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button } from "reactstrap";
+
 import MainMenu from './components/MainMenu' 
+import Categories from "./components/Categories"
 
 
 class App extends Component {
@@ -34,16 +35,42 @@ class App extends Component {
           filteredData: items.data,
           categories: categoryData
         });
-        console.log(categoryData)
+        
       })
 
       .catch((error) => "The error is" + error);
+      
   }
 
 
+  
+  handlerBtn=(category)=> {
+    if (category === "all") {
+      this.setState({ data: "all"})
+    } else { 
+      const filteredCategory = this.state.data.filter((item)=>item.category === category)
+      if(filteredCategory){
+        this.setState({ data: filteredCategory })
+      }
+    }
+    // console.log("breakfast pressed")
+    // const filteredCategory = this.state.data.filter((item)=>item.category === categories)
+    
+    //   if(filteredCategory ) {
 
+         
+    //      this.setState({
+    //       data: filteredCategory
+
+    //     })
+    //   }
+
+    }
+
+    
+  
   render() {
-    const { categories, data } = this.state;
+    const { categories, data, handlerBtn } = this.state;
 
     return (
       <div className="App">
@@ -53,15 +80,7 @@ class App extends Component {
 
         <div className = 'underline'></div>
         </div>
-
-        {categories.map((category, index) => {
-            return (
-              <Button size="lg" outline color="warning" key={index}>
-                {category}
-              </Button>
-            );
-          })}
-          
+        <Categories CategoriesBtn={categories} filter={handlerBtn}/>
         <MainMenu getData ={data} />
       </div>
     );
