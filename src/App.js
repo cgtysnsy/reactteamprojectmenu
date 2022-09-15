@@ -4,6 +4,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "reactstrap";
 import MainMenu from './components/MainMenu' 
+import Categories from "./components/Categories"
 
 
 class App extends Component {
@@ -34,14 +35,31 @@ class App extends Component {
           filteredData: items.data,
           categories: categoryData
         });
-        console.log(categoryData)
+        
       })
 
       .catch((error) => "The error is" + error);
+      
   }
 
 
+  
+  handlerBtn=(categories)=> {
+    console.log(items)
+    const filteredCategory = items.data.filter(i);
+    filteredCategory.data.filter((item) => {
+      if(categories === "Breakfast") {
+         const filteredData = this.data.filter((name)=> name.category === categories)
+         this.setState({
+          data: filteredData
 
+        })
+      }
+
+    })
+
+    
+  }
   render() {
     const { categories, data } = this.state;
 
@@ -53,15 +71,7 @@ class App extends Component {
 
         <div className = 'underline'></div>
         </div>
-
-        {categories.map((category, index) => {
-            return (
-              <Button size="lg" outline color="warning" key={index}>
-                {category}
-              </Button>
-            );
-          })}
-          
+        <Categories CategoriesBtn={categories} filter={this.handlerBtn}/>
         <MainMenu getData ={data} />
       </div>
     );
