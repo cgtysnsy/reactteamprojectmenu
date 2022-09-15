@@ -8,8 +8,8 @@ export default function Categories({CategoriesBtn, filter}) {
         {CategoriesBtn.map((category, index) => {
             return (
               <button className="filter-btn"
-                onClick={()=> filter(category)}
-                key={index}>{category}
+                onClick={ ()=>{ filter(category) }}
+                >{category}
               </button>
             );
           })}
