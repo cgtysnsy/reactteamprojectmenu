@@ -1,11 +1,9 @@
-import React,{Component } from "react";
+import React, { Component } from "react";
 import axios from "axios";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import MainMenu from './components/MainMenu' 
-import Categories from "./components/Categories"
-
+import Categories from "./components/Categories";
+import MainMenu from "./components/MainMenu";
 
 class App extends Component {
   constructor() {
@@ -13,11 +11,10 @@ class App extends Component {
     this.state = {
       data: [],
       filteredData: [],
-      categories: []
+      categories: [],
     };
   }
 
-  
   componentDidMount() {
     const endPoint =
       "https://gist.githubusercontent.com/maratgaip/44060c688fcf5f2b7b3985a6d15fdb1d/raw/e93c3dce0826d08c8c6e779cb5e6d9512c8fdced/restaurant-menu.json";
@@ -33,55 +30,48 @@ class App extends Component {
         this.setState({
           data: items.data,
           filteredData: items.data,
-          categories: categoryData
+          categories: categoryData,
         });
-        
       })
 
       .catch((error) => "The error is" + error);
-      
   }
 
-
-  
-  handlerBtn=(category)=> {
+  handlerBtn = (category) => {
     if (category === "all") {
-      this.setState({ data: "all"})
-    } else { 
-      const filteredCategory = this.state.data.filter((item)=>item.category === category)
-      if(filteredCategory){
-        this.setState({ data: filteredCategory })
+      this.setState({ data: this.state.filteredData });
+    } else {
+      const filteredCategory = this.state.filteredData.filter(
+        (item) => item.category === category
+      );
+      if (filteredCategory) {
+        this.setState({ data: filteredCategory });
       }
     }
     // console.log("breakfast pressed")
     // const filteredCategory = this.state.data.filter((item)=>item.category === categories)
-    
+
     //   if(filteredCategory ) {
 
-         
     //      this.setState({
     //       data: filteredCategory
 
     //     })
     //   }
+  };
 
-    }
-
-    
-  
   render() {
     const { categories, data, handlerBtn } = this.state;
 
     return (
       <div className="App">
+        <div className="title">
+          <h2>Our Menu</h2>
 
-        <div className ='title'>
-        <h2>Our Menu</h2>
-
-        <div className = 'underline'></div>
+          <div className="underline"></div>
         </div>
-        <Categories CategoriesBtn={categories} filter={handlerBtn}/>
-        <MainMenu getData ={data} />
+        <Categories categoriesBtn={categories} handlerBtn={this.handlerBtn} />
+        <MainMenu getData={data} />
       </div>
     );
   }
