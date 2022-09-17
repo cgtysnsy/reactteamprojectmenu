@@ -3,10 +3,10 @@ import React from "react";
 function MainMenu({ getData }) {
   return (
     <div className="section-center">
-      {getData.map((items) => {
+      {getData.map((items, index) => {
         return (
-          <div className="menu-item ">
-            <img className="photo" src={items.img} alt="nameOfTheMeal" />
+          <div className="menu-item" key={index}>
+            <img className="photo" src={items.img} alt={items.title} />
             <div className="item-info">
               <header>
                 <h4>{items.title}</h4>

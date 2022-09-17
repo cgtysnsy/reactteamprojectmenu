@@ -5,7 +5,12 @@ export default function Categories({ categoriesBtn, handlerBtn }) {
     <div className="btn-container">
       {categoriesBtn.map((category, index) => {
         return (
-          <button className="filter-btn" onClick={() => handlerBtn(category)}>
+          <button
+            className="filter-btn"
+            onClick={(e) => handlerBtn(e)}
+            key={index}
+            name={category}
+          >
             {category}
           </button>
         );

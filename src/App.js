@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
-import "./App.css";
+import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Categories from "./components/Categories";
 import MainMenu from "./components/MainMenu";
+import SearchInput from "./components/SearchInput";
 
 class App extends Component {
   constructor() {
@@ -12,6 +13,7 @@ class App extends Component {
       data: [],
       filteredData: [],
       categories: [],
+      inputValue: ""
     };
   }
 
@@ -30,48 +32,48 @@ class App extends Component {
         this.setState({
           data: items.data,
           filteredData: items.data,
-          categories: categoryData,
+          categories: categoryData
         });
       })
 
       .catch((error) => "The error is" + error);
   }
 
-  handlerBtn = (category) => {
-    if (category === "all") {
-      this.setState({ data: this.state.filteredData });
+  handlerBtn = (e) => {
+    const copyData = [...this.state.data];
+    const name = e.target.name;
+    if (name === "all") {
+      this.setState({ filteredData: copyData });
     } else {
-      const filteredCategory = this.state.filteredData.filter(
-        (item) => item.category === category
-      );
-      if (filteredCategory) {
-        this.setState({ data: filteredCategory });
-      }
+      const categoryData = copyData.filter((item) => item.category === name);
+      this.setState({ filteredData: categoryData });
     }
-    // console.log("breakfast pressed")
-    // const filteredCategory = this.state.data.filter((item)=>item.category === categories)
+  };
 
-    //   if(filteredCategory ) {
-
-    //      this.setState({
-    //       data: filteredCategory
-
-    //     })
-    //   }
+  handlerInput = (e) => {
+    const nameOfMeal = e.target.value;
+    const allMeals = [...this.state.data];
+    const filtered = allMeals.filter((item) =>
+      item.title.toLowerCase().includes(nameOfMeal.toLowerCase())
+    );
+    this.setState({ inputValue: nameOfMeal, filteredData: filtered });
   };
 
   render() {
-    const { categories, data, handlerBtn } = this.state;
-
+    const { categories, filteredData, inputValue } = this.state;
     return (
       <div className="App">
         <div className="title">
           <h2>Our Menu</h2>
-
           <div className="underline"></div>
         </div>
         <Categories categoriesBtn={categories} handlerBtn={this.handlerBtn} />
-        <MainMenu getData={data} />
+        <SearchInput value={inputValue} handlerInput={this.handlerInput} />
+        {filteredData.length > 0 ? (
+          <MainMenu getData={filteredData} />
+        ) : (
+          <h3 style={{ textAlign: "center", color: "red" }}>not found</h3>
+        )}
       </div>
     );
   }

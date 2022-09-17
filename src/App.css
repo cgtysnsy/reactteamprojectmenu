@@ -113,6 +113,18 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+/* border focus nedds to be updated*/
+
+.input-search {
+  width: 50%;
+  border-color: var(--clr-gold);
+  border-radius: var(--radius);
+  color: var(--clr-gold);
+  padding: 5px;
+  margin: 40px auto;
+  display: block;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
