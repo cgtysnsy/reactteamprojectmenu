@@ -41,15 +41,15 @@ https://csb-t2h2bx.netlify.app/
 * Determine the new tasks and divide them into relevant teams.
 * According to the three, tasks were divided into two teams.
 * For this sprint, main tasks for each team;
-    *First team will responsible;
- 	*Search functionality Issue #4 - 3 points; +
-    	*Search by feature. Issue #7 - 3 points; +
-(Adilet Zhusupov,  Aliia Ruslanova, Aizhan,  Akmoor Abdirashid kyzy)
+    		*First team will responsible;
+ 		*Search functionality Issue #4 - 3 points; +
+    		*Search by feature. Issue #7 - 3 points; +
+		(Adilet Zhusupov,  Aliia Ruslanova, Aizhan,  Akmoor Abdirashid kyzy)
 
-   *Second team will responsible;
-       *Filter by price feature. Issue #8 - 3 points; +
-       *Add to cart feature. Issue #9 - 5 points; +
-(Azima Satieva, Asel Omurzakova, Çağatay Şensoy,  Anarbek Niiazakun)		                      
+   		*Second team will responsible;
+       		*Filter by price feature. Issue #8 - 3 points; +
+       		*Add to cart feature. Issue #9 - 5 points; +
+		(Azima Satieva, Asel Omurzakova, Çağatay Şensoy,  Anarbek Niiazakun)		                      
 
 			-Subtask: Relevant CSS codes will be added and upgraded
 				(Asel Omurzakova) +
