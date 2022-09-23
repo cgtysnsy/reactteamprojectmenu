@@ -18,13 +18,13 @@ https://csb-t2h2bx.netlify.app/
 		-It should be dynamic. If some new meals/drinks were added, it could be created automatically in the UI.
 
 * For each task, three different teams were created. Every team were responsible for one of these tasks.
- 	*For App.js = Adilet Zhusupov
+ 		1*For App.js = Adilet Zhusupov
 		          Aliia Ruslanova
 		          Aizhan 
-	*For MainMenu.jsx = Akmoor Abdirashid kyzy
+		2*For MainMenu.jsx = Akmoor Abdirashid kyzy
 		            Anarbek Niiazakunov 
 		            Bubumariia Kudaiberdieva
-	*For Categories.jsx = Azima Satieva
+		3*For Categories.jsx = Azima Satieva
 		              Asel Omurzakova 
 		              Çağatay Şensoy
 
