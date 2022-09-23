@@ -8,7 +8,9 @@ https://csb-t2h2bx.netlify.app/
 ## @Kick Off meeting 
 
 **Determined the necessary points and tasks.
+
 **Tech Lead is going to  be Çağatay Şensoy, Scrum Master is going to be Aizhan 
+
 **For the first sprint, three main tasks were determined.
 
 	- Create an App.js file for the parent component. It will store the states, fetching the relevant data, and render the main functions.
