@@ -56,19 +56,19 @@ https://csb-t2h2bx.netlify.app/
 	
 ## @After Second Sprint Meeting (Before presentation)
 
--Checked the CSS codes.
--Some bugs were fixed. (HTML, CSS  parts; className, tabIndex etc.)
--Filter by price part was improved.
--Session storage property was added to the project. It stores the items which were added to the cart from users.
--Project was deployed to Netlify.
+	-Checked the CSS codes.
+	-Some bugs were fixed. (HTML, CSS  parts; className, tabIndex etc.)
+	-Filter by price part was improved.
+	-Session storage property was added to the project. It stores the items which were added to the cart from users.
+	-Project was deployed to Netlify.
 
 ##  What else can be added and how could it be improved?
 
--Categories part: buttons can change to different style for showing which category of the UI.
--Filter slider could be arranged for the list of prices in the menu. 
--Some CSS style parts could be change.(Total price in the cart basket)
--Could be added a  “Remove All” button in the cart basket.
--Footer could be added in the UI for the some information about Restaurant.
+	-Categories part: buttons can change to different style for showing which category of the UI.
+	-Filter slider could be arranged for the list of prices in the menu. 
+	-Some CSS style parts could be change.(Total price in the cart basket)
+	-Could be added a  “Remove All” button in the cart basket.
+	-Footer could be added in the UI for the some information about Restaurant.
 
 
 
