@@ -22,7 +22,7 @@ https://csb-t2h2bx.netlify.app/
 		--It will take relevant props and show the categories.
 		--It should be dynamic. If some new meals/drinks were added, it could be created automatically in the UI.
 
-**For each task, three different teams were created. Every team were responsible for one of these tasks
+**Three different teams were created. Every team were responsible for one of these tasks
 
  		*For App.js = Adilet Zhusupov
 		          Aliia Ruslanova
