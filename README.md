@@ -41,9 +41,9 @@ https://csb-t2h2bx.netlify.app/
 - Determine the new tasks and divide them into relevant teams.
 - According to the three, tasks were divided into two teams.
 - For this sprint, main tasks for each team;
-	-First team will responsible;
- 		- Search functionality Issue #4 - 3 points; +
-    - Search by feature. Issue #7 - 3 points; +
+    -First team will responsible;
+ 	- Search functionality Issue #4 - 3 points; +
+    	- Search by feature. Issue #7 - 3 points; +
 (Adilet Zhusupov,  Aliia Ruslanova, Aizhan,  Akmoor Abdirashid kyzy)
 
   -Second team will responsible;
