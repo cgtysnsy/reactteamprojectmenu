@@ -12,8 +12,10 @@ https://csb-t2h2bx.netlify.app/
 **For the first sprint, three main tasks were determined.
 
 	- Create an App.js file for the parent component. It will store the states, fetching the relevant data, and render the main functions.
+	
 	- Create a MainMenu.jsx component. 
 		--It will take relevant props and show the menu dynamically.
+		
 	- Create a Categories.jsx component.
 		--It will take relevant props and show the categories.
 		--It should be dynamic. If some new meals/drinks were added, it could be created automatically in the UI.
@@ -31,17 +33,26 @@ https://csb-t2h2bx.netlify.app/
 		              Çağatay Şensoy
 
 **At the end of this sprint, these are expected to be done;
+
 **Render data Issue #1. Api Url - 5 points; +
+
 **Render menu Issue #2 - 3 points; +
+
 **Show Active menu Issue #6 - 1 points; +
+
 **Filter functionality Issue #3 - 3 points; +
+
 
 ## @After First Sprint
 
 **Revision for necessary parts.
+
 **Three main tasks had finished.
+
 **Determine the new tasks and divide them into relevant teams.
+
 **According to the three, tasks were divided into two teams.
+
 **For this sprint, main tasks for each team;
 
     		*First team will responsible;
@@ -49,7 +60,7 @@ https://csb-t2h2bx.netlify.app/
     			*Search by feature. Issue #7 - 3 points; +
 			(Adilet Zhusupov,  Aliia Ruslanova, Aizhan,  Akmoor Abdirashid kyzy)
 
-   		*Second team will responsible;
+   			*Second team will responsible;
        			*Filter by price feature. Issue #8 - 3 points; +
        			*Add to cart feature. Issue #9 - 5 points; +
 			(Azima Satieva, Asel Omurzakova, Çağatay Şensoy,  Anarbek Niiazakun)		                      
