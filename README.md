@@ -8,16 +8,18 @@ https://csb-t2h2bx.netlify.app/
 ## @Kick Off meeting 
 
 * Determined the necessary points and tasks.
-* Tech Lead is going to  be Çağatay Şensoy, Scrum Master is going to be Aizhan 
-* For the first sprint, three main tasks were determined.
+**Tech Lead is going to  be Çağatay Şensoy, Scrum Master is going to be Aizhan 
+**For the first sprint, three main tasks were determined.
+
 	- Create an App.js file for the parent component. It will store the states, fetching the relevant data, and render the main functions.
 	- Create a MainMenu.jsx component. 
-		-It will take relevant props and show the menu dynamically.
+		--It will take relevant props and show the menu dynamically.
 	- Create a Categories.jsx component.
-		-It will take relevant props and show the categories.
-		-It should be dynamic. If some new meals/drinks were added, it could be created automatically in the UI.
+		--It will take relevant props and show the categories.
+		--It should be dynamic. If some new meals/drinks were added, it could be created automatically in the UI.
 
-** For each task, three different teams were created. Every team were responsible for one of these tasks.
+**For each task, three different teams were created. Every team were responsible for one of these tasks
+
  		*For App.js = Adilet Zhusupov
 		          Aliia Ruslanova
 		          Aizhan 
