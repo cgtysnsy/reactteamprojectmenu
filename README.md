@@ -4,6 +4,10 @@ Netlify Link:
 
 https://csb-t2h2bx.netlify.app/
 
+GitHub repo:
+
+https://github.com/cgtysnsy/reactteamprojectmenu
+
 
 ## @Kick Off meeting 
 
