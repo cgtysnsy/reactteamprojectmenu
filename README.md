@@ -1,12 +1,17 @@
 ## Restaurant Menu
 
-Netlify Link:
+## Netlify Link:
 
 https://csb-t2h2bx.netlify.app/
 
-GitHub repo:
+## GitHub repo:
 
 https://github.com/cgtysnsy/reactteamprojectmenu
+
+
+## For the source of project on CodeSandBox
+
+https://codesandbox.io/s/reactteamprojectmenu-forked-t2h2bx?file=/src/components/Categories.jsx
 
 
 ## @Kick Off meeting 
@@ -93,9 +98,6 @@ https://github.com/cgtysnsy/reactteamprojectmenu
 
 
 
-## For the source of project on CodeSandBox
-
-https://codesandbox.io/s/reactteamprojectmenu-forked-t2h2bx?file=/src/components/Categories.jsx
 
 ## For fetching:
 
