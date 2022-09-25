@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import "./styles.css";
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Categories from "./components/Categories";
 import MainMenu from "./components/MainMenu";
@@ -17,7 +17,7 @@ class App extends Component {
       categories: [],
       inputValue: "",
       cartBusket: [],
-      value: [0, 40] // we stopped here, slider
+      value: [0, 40], // we stopped here, slider
       // has a loading problem, need to deal with filter functionality
     };
     //this.filterPrice = this.filterPrice.bind(this);
@@ -38,7 +38,7 @@ class App extends Component {
         this.setState({
           data: items.data,
           filteredData: items.data,
-          categories: categoryData
+          categories: categoryData,
         });
       })
 
@@ -111,7 +111,7 @@ class App extends Component {
       filteredData,
       inputValue,
       cartBusket,
-      value
+      value,
     } = this.state;
     return (
       <div className="App">

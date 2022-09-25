@@ -10,6 +10,7 @@ export default function RangeSlider(props) {
   return (
     <Box sx={{ width: 300 }}>
       <Slider
+        style={{ color: "var(--clr-gold)" }}
         getAriaLabel={() => "Temperature range"}
         value={props.value}
         onChange={(event) => props.handleChangeSlider(event)}

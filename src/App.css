@@ -113,6 +113,18 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+/* border focus nedds to be updated*/
+
+.input-search {
+  width: 50%;
+  border-color: var(--clr-gold);
+  border-radius: var(--radius);
+  color: var(--clr-gold);
+  padding: 5px;
+  margin: 40px auto;
+  display: block;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -180,6 +192,7 @@ Menu
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .underline {
   width: 5rem;
   height: 0.25rem;
@@ -187,15 +200,27 @@ Menu
   margin-left: auto;
   margin-right: auto;
 }
+
+.cart-underline {
+  width: 90rem;
+  height: 0.25rem;
+  background: var(--clr-gold);
+  margin-left: -70px;
+  margin-right: 150;
+  margin-top: 40px;
+}
+
 .btn-container {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
 }
-.filter-btn {
+
+.filter-btn,
+.filter-btncart {
   background: transparent;
   border-color: var(--clr-gold);
-  font-size: 1rem;
+  font-size: 1.8rem;
   text-transform: capitalize;
   margin: 0 0.5rem;
   letter-spacing: 1px;
@@ -208,6 +233,24 @@ Menu
 .filter-btn:hover {
   background: var(--clr-gold);
   color: var(--clr-white);
+}
+
+.filter-btncart:hover {
+  background: var(--clr-gold);
+  color: var(--clr-white);
+}
+
+.filter-btncart {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.css-1v5z18m {
+  width: 50% !important;
+  margin: 1rem auto;
+}
+.css-exkjcx {
+  color: var(--clr-gold) !important;
 }
 .section-center {
   width: 90vw;
@@ -222,12 +265,18 @@ Menu
   gap: 1rem 2rem;
   max-width: 25rem;
 }
-.photo {
+.photo,
+.cart-photo {
   object-fit: cover;
   height: 200px;
   border: 0.25rem solid var(--clr-gold);
   border-radius: var(--radius);
 }
+
+.cart-photo {
+  height: 100px;
+}
+
 .item-info header {
   display: flex;
   justify-content: space-between;
@@ -238,7 +287,24 @@ Menu
 }
 .price {
   color: var(--clr-gold);
+  padding: 5px;
 }
+
+.delete {
+  width: 20%;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 0.1em;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.delete:active {
+  transform: translateY(4px);
+}
+
 .item-text {
   margin-bottom: 0;
   padding-top: 1rem;
@@ -262,4 +328,9 @@ Menu
   .photo {
     height: 150px;
   }
+}
+
+.search-slider-wrapper {
+  width: 40%;
+  margin: auto;
 }
